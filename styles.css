@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.to-do {
+    border: 1px solid #000;
+    background-color: #000;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(173, 133, 140);
+}
+h1 {
+    padding-bottom: 1rem;
+    font-size: 3em;
+}
+form > input {
+    height: 2rem;
+    width: 17rem;
+}
+form > button {
+    height: 1.5rem;
+    background-color: rgb(173, 133, 140);
+    padding: 0.2rem;
+    border: none;
+}
+#taskList {
+    padding: 1rem;
+}
+
+#clearAllButton, #markAllButton {
+    background-color: rgb(173, 133, 140);
+    height: 2rem;
+    width: 9rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border: none;
+}
