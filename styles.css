@@ -22,6 +22,7 @@ h1 {
 form > input {
     height: 2rem;
     width: 17rem;
+    padding: 0.5rem;
 }
 form > button {
     height: 1.5rem;
