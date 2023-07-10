@@ -10,7 +10,6 @@ margin-top: 0.7rem;
 font-size: 1.5rem
 `
 
-
 const createTaskItem = (task) => `
 <li>
     <input type="checkbox" name="task" value="$(task)" onChange="toggleTaskCompletion(event)">
@@ -25,7 +24,7 @@ const storedTasks =
 const renderTasks = ()  => {
     storedTasks.forEach((task) => {
         taskList.insertAdjacentHTML(
-            'beforeend',
+            'afterbegin',
             createTaskItem(task)
         )
     })
@@ -38,7 +37,7 @@ const addTask = (event) => {
 
     const task = taskInput.value
     const taskItem = createTaskItem(task)
-    taskList.insertAdjacentHTML('beforeend', taskItem)
+    taskList.insertAdjacentHTML('afterbegin', taskItem)
 
     storedTasks.push(task)
     localStorage.setItem(
